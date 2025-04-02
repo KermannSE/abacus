@@ -1,4 +1,4 @@
-# Exercise 2: Examining Differences Between Files
+# Exercise 3: Adding Files to the Index
 
 class Compute:
     def __init__(self, operator, operands):
@@ -9,7 +9,10 @@ class Compute:
         pass
 
     def subtract(self):
-        pass
+        difference = 0
+        for item in self.operands:
+            difference -= item
+        print(difference)
 
     def divide(self):
         pass
